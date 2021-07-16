@@ -1,0 +1,149 @@
+@import url('https://fonts.googleapis.com/css2?family=Fredericka+the+Great&family=Open+Sans:wght@300&display=swap');
+   
+$yellow-color: #E8C443;
+$white-color:#FFFFFF;
+$gra-color:#8C8C8C;
+$black-color:#000000;
+$fontText:'Open Sans', sans-serif;
+$fontTitles:'Fredericka the Great', cursive;
+
+*{
+    box-sizing: border-box;
+    margin: 0;
+    font-family: $fontText;
+}
+body{
+    min-height: 100vh;
+    header{
+        text-transform: uppercase;
+        color: $white-color;
+        background-image: url('../img/bg.jpeg');
+        background-repeat: no-repeat;
+        background-size:cover;
+        background-position: center;
+        width: 100%;
+        nav{
+            // border-bottom: solid $white-color 1px;
+            padding-top: 2em;
+            padding-bottom: 1em;
+            display: flex;
+            justify-content: space-around;
+            a{
+                color: $white-color;
+                text-decoration: none;
+                padding-bottom: 1em;
+            }
+            a:hover{
+                color: $yellow-color;
+                border-bottom: $yellow-color 0.5px solid;
+            }
+            div{
+                width: 10%;
+                border-radius: 50%;
+                background-color: $yellow-color;
+            }
+        }
+        section{
+            padding:2em;
+            margin-top: 20%;
+            display: flex;
+            justify-content: space-around;
+            .date{
+                text-align: center;
+                // width: max-content;
+                transform-origin: 0 0;
+                transform: rotate(90deg);
+            }
+            .headerMiddle{
+                
+                text-align:center ;
+                p{
+                    margin-bottom: 3em;
+                    padding-right: 30%;
+                }
+                h1{
+                    font-family: $fontTitles;
+                    text-transform: capitalize;
+                    letter-spacing: 0.5em;
+                    font-size: 3em;
+                    padding-right: 4em;
+                    margin-bottom: 1em;
+               
+                }
+                .line{
+                    width: 10%;
+                    border-top: $yellow-color 6px solid;
+                    margin-left: 30%;
+                    margin-bottom: 3em;
+                }
+                .headerlinks{
+                    margin-top: 7em;
+                    margin-left: 11%;
+                    // border-style: solid;
+                    width: 50%;
+                    display: flex;
+                    justify-content: space-between;
+                    a{
+                        width: 40%;
+                        padding: 1.5em;
+                        border-radius: 0.5em;
+                        display: inline-block;
+                        
+                        text-decoration: none;
+                        color: $white-color;
+                        margin-bottom: 10em;
+                        background-color: transparent;
+                        border:$white-color 2px solid;
+                    }
+                    a:hover{
+                        opacity: 0.7;
+                        background-color: $yellow-color;
+                    }
+                    // a:nth-child(2){
+                    //     background-color: transparent;
+                    //     border:$white-color 2px solid;
+                    // }
+                }
+                .btn_down{
+                    // width: 5em;
+                    // height: 5em;
+                    // background-color: $white-color;
+                    // border-radius: 50%;
+                    a{
+                        text-align: center;
+                        margin-bottom: 3em;
+                        padding: 1em;
+                        border-radius: 50%;
+                        background-color: $yellow-color;
+                        // outline: solid 2px $white-color;
+                        img{    
+                            width: 2em;    
+                        }
+                    }
+                }
+            }
+            .socialMedia{
+                display: flex;
+                flex-direction: column;
+                justify-content: top;
+                
+                a{  
+                    text-align: center;
+                    margin-bottom: 3em;
+                    padding: 0.5em;
+                    border-radius: 50%;
+                    background-color: $yellow-color;
+                    // outline: solid 2px $white-color;
+                    img{    
+                        width: 2em;    
+                    }
+                }
+                a:hover{
+                    opacity: 0.7;
+                }
+
+            }
+        }
+    }
+}
+    

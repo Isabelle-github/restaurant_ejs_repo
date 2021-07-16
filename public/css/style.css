@@ -1,0 +1,162 @@
+@import url("https://fonts.googleapis.com/css2?family=Fredericka+the+Great&family=Open+Sans:wght@300&display=swap");
+* {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  margin: 0;
+  font-family: "Open Sans", sans-serif;
+}
+
+body {
+  min-height: 100vh;
+}
+
+body header {
+  text-transform: uppercase;
+  color: #FFFFFF;
+  background-image: url("../img/bg.jpeg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  width: 100%;
+}
+
+body header nav {
+  padding-top: 2em;
+  padding-bottom: 1em;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+}
+
+body header nav a {
+  color: #FFFFFF;
+  text-decoration: none;
+  padding-bottom: 1em;
+}
+
+body header nav a:hover {
+  color: #E8C443;
+  border-bottom: #E8C443 0.5px solid;
+}
+
+body header nav div {
+  width: 10%;
+  border-radius: 50%;
+  background-color: #E8C443;
+}
+
+body header section {
+  padding: 2em;
+  margin-top: 20%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+}
+
+body header section .date {
+  text-align: center;
+  -webkit-transform-origin: 0 0;
+          transform-origin: 0 0;
+  -webkit-transform: rotate(90deg);
+          transform: rotate(90deg);
+}
+
+body header section .headerMiddle {
+  text-align: center;
+}
+
+body header section .headerMiddle p {
+  margin-bottom: 3em;
+  padding-right: 30%;
+}
+
+body header section .headerMiddle h1 {
+  font-family: "Fredericka the Great", cursive;
+  text-transform: capitalize;
+  letter-spacing: 0.5em;
+  font-size: 3em;
+  padding-right: 4em;
+  margin-bottom: 1em;
+}
+
+body header section .headerMiddle .line {
+  width: 10%;
+  border-top: #E8C443 6px solid;
+  margin-left: 30%;
+  margin-bottom: 3em;
+}
+
+body header section .headerMiddle .headerlinks {
+  margin-top: 7em;
+  margin-left: 11%;
+  width: 50%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+body header section .headerMiddle .headerlinks a {
+  width: 40%;
+  padding: 1.5em;
+  border-radius: 0.5em;
+  display: inline-block;
+  text-decoration: none;
+  color: #FFFFFF;
+  margin-bottom: 10em;
+  background-color: transparent;
+  border: #FFFFFF 2px solid;
+}
+
+body header section .headerMiddle .headerlinks a:hover {
+  opacity: 0.7;
+  background-color: #E8C443;
+}
+
+body header section .headerMiddle .btn_down a {
+  text-align: center;
+  margin-bottom: 3em;
+  padding: 1em;
+  border-radius: 50%;
+  background-color: #E8C443;
+}
+
+body header section .headerMiddle .btn_down a img {
+  width: 2em;
+}
+
+body header section .socialMedia {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: top;
+      -ms-flex-pack: top;
+          justify-content: top;
+}
+
+body header section .socialMedia a {
+  text-align: center;
+  margin-bottom: 3em;
+  padding: 0.5em;
+  border-radius: 50%;
+  background-color: #E8C443;
+}
+
+body header section .socialMedia a img {
+  width: 2em;
+}
+
+body header section .socialMedia a:hover {
+  opacity: 0.7;
+}
+/*# sourceMappingURL=style.css.map */
