@@ -12,6 +12,7 @@ $fontTitles:'Fredericka the Great', cursive;
     margin: 0;
     font-family: $fontText;
 }
+// HOME
 body{
     min-height: 100vh;
     header{
@@ -21,7 +22,7 @@ body{
         background-repeat: no-repeat;
         background-size:cover;
         background-position: center;
-        width: 100%;
+        // background: linear-gradient(0deg, rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)) url('../img/bg.jpeg');
         nav{
             // border-bottom: solid $white-color 1px;
             padding-top: 2em;
@@ -71,7 +72,7 @@ body{
                
                 }
                 .line{
-                    width: 10%;
+                    width: 12%;
                     border-top: $yellow-color 6px solid;
                     margin-left: 30%;
                     margin-bottom: 3em;
@@ -88,37 +89,41 @@ body{
                         padding: 1.5em;
                         border-radius: 0.5em;
                         display: inline-block;
-                        
                         text-decoration: none;
                         color: $white-color;
                         margin-bottom: 10em;
-                        background-color: transparent;
-                        border:$white-color 2px solid;
+                        border:$white-color 1px solid;
+                        background-color: $yellow-color;
                     }
                     a:hover{
                         opacity: 0.7;
-                        background-color: $yellow-color;
+                        
                     }
-                    // a:nth-child(2){
-                    //     background-color: transparent;
-                    //     border:$white-color 2px solid;
-                    // }
+                    a:nth-child(2){
+                        background-color: transparent;
+                        border:$white-color 1px solid;
+                    }
                 }
                 .btn_down{
-                    // width: 5em;
-                    // height: 5em;
-                    // background-color: $white-color;
-                    // border-radius: 50%;
+                   
                     a{
                         text-align: center;
+                        display: inline-block;
                         margin-bottom: 3em;
-                        padding: 1em;
+                        margin-right: 30%;
+                        padding: 1em 0.5em 0.5em 0.5em;
                         border-radius: 50%;
-                        background-color: $yellow-color;
+                        background-color: $white-color;
                         // outline: solid 2px $white-color;
-                        img{    
+                        
+                        img{   
+                            // display: inline-block;
+                            // padding-top: 1em; 
                             width: 2em;    
                         }
+                    }
+                    a:hover{
+                        opacity: 0.7;
                     }
                 }
             }
@@ -132,7 +137,7 @@ body{
                     margin-bottom: 3em;
                     padding: 0.5em;
                     border-radius: 50%;
-                    background-color: $yellow-color;
+                    background-color: $white-color;
                     // outline: solid 2px $white-color;
                     img{    
                         width: 2em;    
@@ -143,6 +148,76 @@ body{
                 }
 
             }
+        }
+    }
+
+    // ABOUT
+    main #about, #team{
+        display: flex;
+        padding: 5em;
+    
+        article{
+            padding: 3em;
+            text-align: center;
+            width: 50%;
+            h1{
+                font-family: $fontTitles;
+                margin-bottom: 1em;
+                font-size: 2em;
+            }
+            .line{
+                width: 12%;
+                border-top: $yellow-color 6px solid;
+                margin: 0 auto;
+                margin-bottom: 2em;
+            }
+            p:nth-of-type(1){
+                font-size: 1.2em;
+                margin-bottom:1em ;
+            }
+            p{
+                margin-bottom:1em ;
+            }
+        }
+        .img{
+            object-fit: fill;
+            box-shadow: 0 6px 10px 0 rgba(0, 0, 0, 0.2), 0 10px 30px 0 rgba(0, 0, 0, 0.19);
+            width: 35%;
+            background-image: url('../img/about-img.jpeg') ;
+            background-repeat: no-repeat;
+            background-size:cover;
+            background-position: center;
+            .square{
+                position: relative;
+                top:20%;
+                left: 80%;
+                width: 40%;
+                height: 60%;
+                border: $yellow-color 1em solid;
+                box-shadow: 0 6px 10px 0 rgba(0, 0, 0, 0.2), 0 10px 30px 0 rgba(0, 0, 0, 0.19);
+            }
+        }
+        #team{
+            background-image: url('../img/team-bg.jpeg');
+           
+            background-repeat: no-repeat;
+            background-size:cover;
+            background-position: center;
+            .img{
+                background-image: url('../img/team-img.jpeg') ;
+               .square{
+
+               }
+            }
+        }
+    }
+    //FOOTER
+    footer{
+        background-color: $black-color;
+        color: $white-color;
+        p{
+            text-align: center;
+            padding: 5em;
         }
     }
 }
