@@ -152,7 +152,7 @@ body{
     }
 
     // ABOUT
-    main #about, #team{
+    main #about, #team, #booking{
         display: flex;
         padding: 5em;
     
@@ -197,19 +197,26 @@ body{
                 box-shadow: 0 6px 10px 0 rgba(0, 0, 0, 0.2), 0 10px 30px 0 rgba(0, 0, 0, 0.19);
             }
         }
-        #team{
-            background-image: url('../img/team-bg.jpeg');
-           
-            background-repeat: no-repeat;
-            background-size:cover;
-            background-position: center;
-            .img{
-                background-image: url('../img/team-img.jpeg') ;
-               .square{
-
-               }
+  
+    }
+    main #booking{
+        .img{
+            background-image: url('../img/booking-img.jpeg') ;
+        }
+        article{
+            form{
+                input{
+                     width: 40%;
+                     height: 3em;
+                     margin-bottom: 0.8em;
+                }
+                input:last-of-type{
+                   width: 82%;
+                   background-color: $yellow-color;
+                }
             }
         }
+        
     }
     //FOOTER
     footer{

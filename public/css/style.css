@@ -169,42 +169,42 @@ body header section .socialMedia a:hover {
   opacity: 0.7;
 }
 
-body main #about, body #team {
+body main #about, body #team, body #booking {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   padding: 5em;
 }
 
-body main #about article, body #team article {
+body main #about article, body #team article, body #booking article {
   padding: 3em;
   text-align: center;
   width: 50%;
 }
 
-body main #about article h1, body #team article h1 {
+body main #about article h1, body #team article h1, body #booking article h1 {
   font-family: "Fredericka the Great", cursive;
   margin-bottom: 1em;
   font-size: 2em;
 }
 
-body main #about article .line, body #team article .line {
+body main #about article .line, body #team article .line, body #booking article .line {
   width: 12%;
   border-top: #E8C443 6px solid;
   margin: 0 auto;
   margin-bottom: 2em;
 }
 
-body main #about article p:nth-of-type(1), body #team article p:nth-of-type(1) {
+body main #about article p:nth-of-type(1), body #team article p:nth-of-type(1), body #booking article p:nth-of-type(1) {
   font-size: 1.2em;
   margin-bottom: 1em;
 }
 
-body main #about article p, body #team article p {
+body main #about article p, body #team article p, body #booking article p {
   margin-bottom: 1em;
 }
 
-body main #about .img, body #team .img {
+body main #about .img, body #team .img, body #booking .img {
   -o-object-fit: fill;
      object-fit: fill;
   -webkit-box-shadow: 0 6px 10px 0 rgba(0, 0, 0, 0.2), 0 10px 30px 0 rgba(0, 0, 0, 0.19);
@@ -216,7 +216,7 @@ body main #about .img, body #team .img {
   background-position: center;
 }
 
-body main #about .img .square, body #team .img .square {
+body main #about .img .square, body #team .img .square, body #booking .img .square {
   position: relative;
   top: 20%;
   left: 80%;
@@ -227,15 +227,19 @@ body main #about .img .square, body #team .img .square {
           box-shadow: 0 6px 10px 0 rgba(0, 0, 0, 0.2), 0 10px 30px 0 rgba(0, 0, 0, 0.19);
 }
 
-body main #about #team, body #team #team {
-  background-image: url("../img/team-bg.jpeg");
-  background-repeat: no-repeat;
-  background-size: cover;
-  background-position: center;
+body main #booking .img {
+  background-image: url("../img/booking-img.jpeg");
 }
 
-body main #about #team .img, body #team #team .img {
-  background-image: url("../img/team-img.jpeg");
+body main #booking article form input {
+  width: 40%;
+  height: 3em;
+  margin-bottom: 0.8em;
+}
+
+body main #booking article form input:last-of-type {
+  width: 82%;
+  background-color: #E8C443;
 }
 
 body footer {
