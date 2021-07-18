@@ -235,11 +235,18 @@ body main #booking article form input {
   width: 40%;
   height: 3em;
   margin-bottom: 0.8em;
+  background-color: #8C8C8C;
 }
 
 body main #booking article form input:last-of-type {
   width: 82%;
   background-color: #E8C443;
+}
+
+body main #booking + p {
+  color: #8C8C8C;
+  text-align: center;
+  padding: 1em;
 }
 
 body footer {
@@ -250,5 +257,10 @@ body footer {
 body footer p {
   text-align: center;
   padding: 5em;
+}
+
+body .img404 {
+  display: block;
+  margin: 0 auto;
 }
 /*# sourceMappingURL=style.css.map */

@@ -209,6 +209,7 @@ body{
                      width: 40%;
                      height: 3em;
                      margin-bottom: 0.8em;
+                     background-color: $gra-color;
                 }
                 input:last-of-type{
                    width: 82%;
@@ -216,7 +217,11 @@ body{
                 }
             }
         }
-        
+    }
+    main #booking +p{
+        color: $gra-color;
+        text-align: center;
+        padding: 1em;
     }
     //FOOTER
     footer{
@@ -226,6 +231,12 @@ body{
             text-align: center;
             padding: 5em;
         }
+    }
+    //404
+    .img404{
+        
+        display: block;
+        margin: 0 auto;
     }
 }
     

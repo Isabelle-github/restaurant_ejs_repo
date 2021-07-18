@@ -39,6 +39,8 @@ app.get('/booking', (req, res) => {
     // res.send('index')
     res.render('booking', { myPageTitle: `${appName}|BOOKING` })
 })
-
+app.use(function (req, res, next) {
+    res.status(404).render('404');
+});
 
 app.listen(PORT, () => { console.log(`listening to http://localhost:${PORT}`) })
