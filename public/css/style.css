@@ -74,7 +74,7 @@ body header section .headerMiddle p {
 }
 
 body header section .headerMiddle h1 {
-  font-family: "Fredericka the Great", cursive;
+  font-family: "Open Sans", sans-serif;
   text-transform: capitalize;
   letter-spacing: 0.5em;
   font-size: 3em;
@@ -169,42 +169,42 @@ body header section .socialMedia a:hover {
   opacity: 0.7;
 }
 
-body main #about, body #team, body #booking, body #feedback {
+body main #about, body #team, body #booking, body #feedback, body #galerie {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   padding: 5em;
 }
 
-body main #about article, body #team article, body #booking article, body #feedback article {
+body main #about article, body #team article, body #booking article, body #feedback article, body #galerie article {
   padding: 3em;
   text-align: center;
   width: 50%;
 }
 
-body main #about article h1, body #team article h1, body #booking article h1, body #feedback article h1 {
-  font-family: "Fredericka the Great", cursive;
+body main #about article h1, body #team article h1, body #booking article h1, body #feedback article h1, body #galerie article h1 {
+  font-family: "Open Sans", sans-serif;
   margin-bottom: 1em;
   font-size: 2em;
 }
 
-body main #about article .line, body #team article .line, body #booking article .line, body #feedback article .line {
+body main #about article .line, body #team article .line, body #booking article .line, body #feedback article .line, body #galerie article .line {
   width: 12%;
   border-top: #E8C443 6px solid;
   margin: 0 auto;
   margin-bottom: 2em;
 }
 
-body main #about article p:nth-of-type(1), body #team article p:nth-of-type(1), body #booking article p:nth-of-type(1), body #feedback article p:nth-of-type(1) {
+body main #about article p:nth-of-type(1), body #team article p:nth-of-type(1), body #booking article p:nth-of-type(1), body #feedback article p:nth-of-type(1), body #galerie article p:nth-of-type(1) {
   font-size: 1.2em;
   margin-bottom: 1em;
 }
 
-body main #about article p, body #team article p, body #booking article p, body #feedback article p {
+body main #about article p, body #team article p, body #booking article p, body #feedback article p, body #galerie article p {
   margin-bottom: 1em;
 }
 
-body main #about .img, body #team .img, body #booking .img, body #feedback .img {
+body main #about .img, body #team .img, body #booking .img, body #feedback .img, body #galerie .img {
   -o-object-fit: fill;
      object-fit: fill;
   -webkit-box-shadow: 0 6px 10px 0 rgba(0, 0, 0, 0.2), 0 10px 30px 0 rgba(0, 0, 0, 0.19);
@@ -216,7 +216,7 @@ body main #about .img, body #team .img, body #booking .img, body #feedback .img 
   background-position: center;
 }
 
-body main #about .img .square, body #team .img .square, body #booking .img .square, body #feedback .img .square {
+body main #about .img .square, body #team .img .square, body #booking .img .square, body #feedback .img .square, body #galerie .img .square {
   position: relative;
   top: 20%;
   left: 80%;
@@ -232,11 +232,13 @@ body main #booking .img, body main #feedback .img {
 }
 
 body main #booking article form input, body main #feedback article form input {
+  border-style: none;
+  border-radius: 5px;
   color: #FFFFFF;
   width: 40%;
   height: 3em;
   margin-bottom: 0.8em;
-  background-color: #8C8C8C;
+  background-color: #E5E5E5;
 }
 
 body main #booking article form input:last-of-type, body main #feedback article form input:last-of-type {
@@ -246,20 +248,65 @@ body main #booking article form input:last-of-type, body main #feedback article 
 }
 
 body main #feedback .img {
+  width: 40%;
   background-image: url("../img/feedback-img.jpeg");
 }
 
 body main #feedback article form input:nth-of-type(3) {
   width: 82%;
-  background-color: #8C8C8C;
+  background-color: #E5E5E5;
   height: 10em;
   color: #FFFFFF;
 }
 
 body main #booking + p, body main #feedback + p {
-  color: #8C8C8C;
+  color: #E5E5E5;
   text-align: center;
   padding: 1em;
+}
+
+body main #team, body main #galerie {
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  background-image: url("../img/team-bg.jpeg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+
+body main #team article, body main #galerie article {
+  color: #FFFFFF;
+  text-align: center;
+  width: 50%;
+}
+
+body main #team article p:nth-of-type(1), body main #galerie article p:nth-of-type(1) {
+  font-size: 1.2em;
+  margin-bottom: 1em;
+}
+
+body main #team article p, body main #galerie article p {
+  margin-bottom: 1em;
+  color: #E5E5E5;
+}
+
+body main #team .img, body main #galerie .img {
+  -o-object-fit: fill;
+     object-fit: fill;
+  background-image: url("../img/team-img.jpeg");
+}
+
+body main #team .img .square, body main #galerie .img .square {
+  position: relative;
+  top: 20%;
+  left: -20%;
+  width: 40%;
+  height: 60%;
+  border: #E8C443 1em solid;
+}
+
+body main #galerie .img {
+  background-image: url("../img/galerie-img.png");
 }
 
 body footer {

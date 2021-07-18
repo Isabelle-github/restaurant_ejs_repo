@@ -2,10 +2,11 @@
    
 $yellow-color: #E8C443;
 $white-color:#FFFFFF;
-$gra-color:#8C8C8C;
+$gra-color:#E5E5E5;
 $black-color:#000000;
 $fontText:'Open Sans', sans-serif;
-$fontTitles:'Fredericka the Great', cursive;
+$fontTitles:'Open Sans', sans-serif;
+// $fontTitles:'Fredericka the Great', cursive;
 
 *{
     box-sizing: border-box;
@@ -152,7 +153,7 @@ body{
     }
 
     // ABOUT
-    main #about, #team, #booking, #feedback{
+    main #about, #team, #booking, #feedback, #galerie{
         display: flex;
         padding: 5em;
     
@@ -208,11 +209,13 @@ body{
             form{
                
                 input{
-                     color: $white-color;
-                     width: 40%;
-                     height: 3em;
-                     margin-bottom: 0.8em;
-                     background-color: $gra-color;
+                    border-style: none;
+                    border-radius: 5px;
+                    color: $white-color;
+                    width: 40%;
+                    height: 3em;
+                    margin-bottom: 0.8em;
+                    background-color: $gra-color;
                 }
                 input:last-of-type{
                    width: 82%;
@@ -224,6 +227,7 @@ body{
     }
     main #feedback{
         .img{
+            width: 40%;
             background-image: url('../img/feedback-img.jpeg') ;
         }
         article{
@@ -241,6 +245,44 @@ body{
         color: $gra-color;
         text-align: center;
         padding: 1em;
+    }
+    main #team, main #galerie{
+        justify-content: space-around;
+        background-image: url('../img/team-bg.jpeg');
+        background-repeat: no-repeat;
+        background-size:cover;
+        background-position: center;
+        article{
+            color: $white-color; 
+            text-align: center;
+            width: 50%;
+            // padding: 0;
+            p:nth-of-type(1){
+                font-size: 1.2em;
+                margin-bottom:1em ;
+            }
+            p{
+                margin-bottom:1em ;
+                color: $gra-color;
+            }
+        }
+        .img{
+            object-fit: fill;
+            background-image: url('../img/team-img.jpeg') ;
+            .square{
+                position: relative;
+                top:20%; 
+                left: -20%; 
+                width: 40%;
+                height: 60%;
+                border: $yellow-color 1em solid;     
+            }
+        }
+    }
+    main #galerie{
+        .img{
+            background-image: url('../img/galerie-img.png') ;
+        }
     }
     //FOOTER
     footer{
