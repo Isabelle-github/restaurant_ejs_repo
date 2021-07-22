@@ -284,6 +284,68 @@ body{
             background-image: url('../img/galerie-img.png') ;
         }
     }
+    main #contact, main #menu{
+        text-align: center;
+        h1{
+            font-family: $fontTitles;
+            margin-bottom: 1em;
+            font-size: 2em;
+            margin-top: 1em;
+        }
+        .line{
+            width: 5%;
+            border-top: $yellow-color 6px solid;
+            margin: 0 auto;
+            margin-bottom: 2em;
+        }
+        form{
+               padding: 3em;
+               display: flex;
+               flex-wrap: wrap;
+               justify-content: space-between;
+            input{
+                border-style: none;
+                border-radius: 5px;
+                color: $black-color;
+                width: 30%;
+                height: 3em;
+                margin-bottom: 0.8em;
+                background-color: $gra-color;
+            }
+            input:last-of-type{
+               width: 40%;
+               background-color: $yellow-color;
+               color: $black-color;
+            }
+            input:nth-of-type(4){
+                width: 100%;
+                background-color: $gra-color;
+                height: 10em;
+            }
+        }
+       
+    }
+    main #menu{
+        padding: 3em;
+        table {
+            font-family: arial, sans-serif;
+            border-collapse: collapse;
+            width: 100%;
+
+            td, th {
+                border: 1px solid #dddddd;
+                text-align: left;
+                padding: 8px;
+            }
+
+            tr:nth-child(even) {
+                background-color: #dddddd;
+            }
+        }
+    }
+    main #events{
+
+    }
     //FOOTER
     footer{
         background-color: $black-color;

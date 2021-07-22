@@ -309,6 +309,78 @@ body main #galerie .img {
   background-image: url("../img/galerie-img.png");
 }
 
+body main #contact, body main #menu {
+  text-align: center;
+}
+
+body main #contact h1, body main #menu h1 {
+  font-family: "Open Sans", sans-serif;
+  margin-bottom: 1em;
+  font-size: 2em;
+  margin-top: 1em;
+}
+
+body main #contact .line, body main #menu .line {
+  width: 5%;
+  border-top: #E8C443 6px solid;
+  margin: 0 auto;
+  margin-bottom: 2em;
+}
+
+body main #contact form, body main #menu form {
+  padding: 3em;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+body main #contact form input, body main #menu form input {
+  border-style: none;
+  border-radius: 5px;
+  color: #000000;
+  width: 30%;
+  height: 3em;
+  margin-bottom: 0.8em;
+  background-color: #E5E5E5;
+}
+
+body main #contact form input:last-of-type, body main #menu form input:last-of-type {
+  width: 40%;
+  background-color: #E8C443;
+  color: #000000;
+}
+
+body main #contact form input:nth-of-type(4), body main #menu form input:nth-of-type(4) {
+  width: 100%;
+  background-color: #E5E5E5;
+  height: 10em;
+}
+
+body main #menu {
+  padding: 3em;
+}
+
+body main #menu table {
+  font-family: arial, sans-serif;
+  border-collapse: collapse;
+  width: 100%;
+}
+
+body main #menu table td, body main #menu table th {
+  border: 1px solid #dddddd;
+  text-align: left;
+  padding: 8px;
+}
+
+body main #menu table tr:nth-child(even) {
+  background-color: #dddddd;
+}
+
 body footer {
   background-color: #000000;
   color: #FFFFFF;

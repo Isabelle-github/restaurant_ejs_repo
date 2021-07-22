@@ -13,6 +13,35 @@
 
 <body>
     <%- include('./partials/header.ejs') %>
+        <main>
+            <section id="menu">
+                <h1>MENU</h1>
+                <div class="line"></div>
+                <table>
+                    <tr>
+                        <th>Dish</th>
+                        <th>Price</th>
+                        <th>Description</th>
+                    </tr>
+                    <%# menus.forEach(element=> { %>
+                        <%# console.log(element) %>
+                            <tr>
+                                <td>
+                                    <% console.log(menus[2]) %>
+                                        <%= menus[0].name %>
+                                </td>
+                                <td>
+                                    <%= menus[0].price %>
+                                </td>
+                                <td>
+                                    <%= menus[0].Description %>
+                                </td>
+                            </tr>
+                            <%# }) %>
+                </table>
+
+            </section>
+        </main>
         <%- include('./partials/footer.ejs') %>
 </body>
 

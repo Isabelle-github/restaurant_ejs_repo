@@ -1,0 +1,27 @@
+[
+    {
+        "price": "$10.00",
+        "name": "Jerk Chicken",
+        "description": "with Macaroni and Cheese"
+    },
+    {
+        "price": "$12.00",
+        "name": "Goat",
+        "description": "with Vegetables, Macaroni and Cheese"
+    },
+    {
+        "price": "$9.00",
+        "name": "Pasta",
+        "description": "with Baked Chicken"
+    },
+    {
+        "price": "$12.00",
+        "name": "Seafood Pasta",
+        "description": "with Vegetables, Macaroni and Cheese"
+    },
+    {
+        "price": "$13.00",
+        "name": "Oxtail",
+        "description": "with Vegetables, Macaroni and Cheese"
+    }
+]
